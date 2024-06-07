@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Monisha H S</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..16,100..700');
+
+    :root {
+        --mainTextColor-light: #000;
+        --secondaryTextColor-light: rgb(51 51 51);
+        --mainLinkColor-light: #0da2b8;
+        --mainBorderColor-light: rgb(218, 218, 218);
+        --mainBgColor-light: rgb(249, 250, 251);
+
+        --mainTextColor-dark: #fff;
+        --secondaryTextColor-dark: #16aadb;
+        --mainLinkColor-dark: rgb(30, 190,214);
+        --mainBorderColor-dark: #2b3031;
+        --mainBgColor-dark: #131415;
+
+        --mainTextColor: var(--mainTextColor-dark);
+        --secondaryTextColor: var(--secondaryTextColor-dark);
+        --mainLinkColor: var(--mainLinkColor-dark);
+        --mainBorderColor: var(--mainBorderColor-dark);
+        --mainBgColor: var(--mainBgColor-dark);
+    }
+
+    * {
+        font-family: 'Lato', sans-serif;
+        line-height: 1.5em;
+        box-sizing: border-box;
+        color: var(--mainTextColor);
+    }
+
+    body {
+        background-color: var(--mainBgColor);
+        margin: 0;
+        padding: 0;
+        font-size: 16px; /* Base font size */
+    }
+
+    p, span, li, a {
+        color: var(--secondaryTextColor);
+        font-size: 1em; /* Unified font size */
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--mainLinkColor);
+    }
+
+    li {
+        line-height: 1.9em;
+    }
+
+    #container--main {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    .section--page {
+        margin-bottom: 2em;
+    }
+
+    #wrapper--hero {
+        display: flex;
+        align-items: center;
+        gap: 4em;
+    }
+
+    #user-name {
+        font-size: 1.5em; /* Adjusted font size */
+        line-height: 1.5em;
+    }
+
+    #bio, #Contact {
+        font-weight: 500;
+    }
+
+    #profile-pic {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    #socials--list {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 4em; /* Adjusted gap */
+        flex-wrap: wrap;
+    }
+
+    #socials--list a {
+        font-weight: 400;
+        transition: 0.3s;
+    }
+
+    #socials--list a:hover {
+        color: var(--mainLinkColor);
+        font-weight: 400;
+    }
+
+    .card--techstack {
+        border: 1px solid var(--mainBorderColor);
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        margin-bottom: 0.5em;
+    }
+
+    .card--techstack span {
+        font-weight: bold;
+    }
+
+    .line-break {
+        background-color: var(--mainBorderColor);
+        height: 2px;
+    }
+
+    .resume-section p,
+    .resume-section li {
+        color: var(--mainLinkColor); /* Change color to blue */
+    }
+
+    .resume-section h2 {
+        color: #fff; /* Keep heading white */
+        font-size: 1.5em; /* Adjusted font size for headings */
+    }
+</style>
+
+<div id="container--main">
+    <section id="wrapper--hero" class="section--page">
+        <img id="profile-pic" src="./assets/images/profile_pic.jpg" alt="Profile Picture of Monisha H S"/>
+        <div>
+            <h1 id="user-name">Monisha H S</h1>
+            <p id="bio">Pursuing a Bachelor's degree in Electronics and Communication Engineering at <a href="https://www.gitam.edu/academics/gitam-campuses/bengaluru-campus" target="_blank">GITAM University, Bangalore</a>, with hands-on experience in communication technologies.</p>
+            <p>📍Doddaballapur,Bangalore Rural-561203 Karnataka</p>
+            <p>✉ monishahs24@gmail.com</p>
+            <p id="Contact">📞 +91 8050581342</p>
+        </div>
+    </section>
+
+    <section class="section--page">
+        <div id="socials--list">
+            <a href="https://www.linkedin.com/in/monisha-h-s-04aa35265/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/monishahs24" target="_blank">GitHub</a>
+            <a href="./assets/Resume.pdf" target="_blank">Download Resume</a>
+        </div>
+    </section>
+
+    <section class="section--page resume-section">
+        <h2>Educational Qualifications</h2>
+                <div class="card--techstack"><span>✔GITAM University, Bangalore - UG</span></div>
+                    <li>November 2022 - April 2026</li>
+                    <li>Branch - ECE</li>
+                    <li>CGPA - 7.73</li>
+                <div class="card--techstack"><span>✔Shree Vani PU College - PUC/12th</span></div>
+                    <li>August 2020 - March 2022</li>
+                    <li>Combination - PCMB</li>
+                    <li>Percentage - 87%</li>
+                    <li>CGPA - 9.1</li>
+                <div class="card--techstack"><span>✔Swamy Vivekananda English High School - SSLC</span></div>
+                <ul>
+                    <li>April 2020</li>
+                    <li>Percentage - 93.4%</li>
+                    <li>CGPA - 9.8</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section--page">
+        <h2>Skills</h2>
+        <div id="wrapper--techstack__items">
+            <div class="card--techstack"><span>✔Decision Making</span></div>
+            <div class="card--techstack"><span>✔Time Management</span></div>
+            <div class="card--techstack"><span>✔Teamwork</span></div>
+            <div class="card--techstack"><span>✔Creativity</span></div>
+        </div>
+    </section>
+
+    <section class="section--page">
+        <h2>Internships</h2>
+        <div id="wrapper--techstack__items">
+            <div class="card--techstack"><span>✔Embedded Developer Virtual Internship-Online</span></div>
+        </div>
+    </section>
+
+    <section class="section--page">
+        <h2>Certifications</h2>
+        <div id="wrapper--techstack__items">
+            <div class="card--techstack"><span><a href="assets/certificates/aicte.pdf" target="_blank">✔AICTE-Embedded Developer Virtual Internship-Online</a></span></div>
+        </div>
+    </section>
+
+    <section class="section--page">
+        <h2>Technical Skills</h2>
+        <div id="wrapper--techstack__items">
+            <div class="card--techstack"><span>✔C</span></div>
+            <div class="card--techstack"><span>✔Basics of C++</span></div>
+            <div class="card--techstack"><span>✔Basics of Python</span></div>
+        </div>
+    </section>
+
+    <section class="section--page">
+        <h2>Languages Known</h2>
+        <div id="wrapper--techstack__items">
+            <div class="card--techstack"><span>✔English</span></div>
+            <div class="card--techstack"><span>✔Kannada</span></div>
+            <div class="card--techstack"><span>✔Hindi</span></div>
+            <div class="card--techstack"><span>✔Telugu</span></div>
+        </div>
+    </section>
+
+    <section class="section--page">
+        <h2>Hobbies</h2>
+        <div id="wrapper--techstack__items">
+            <div class="card--techstack"><span>✔Watching Mythological Stories</span></div>
+            <div class="card--techstack"><span>✔Travelling</span></div>
+            <div class="card--techstack"><span>✔Listening to Songs</span></div>
+        </div>
+    </section>
+
+    <section class="section--page">
+        <h2>Extra-curricular activities</h2>
+        <div id="wrapper--techstack__items">
+            <div class="card--techstack"><span>✔IEEE Member, Bangalore</span></div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
